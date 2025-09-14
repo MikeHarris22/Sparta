@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MikeHarris Designs | Creative Design Solutions</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .vanta-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg" class="vanta-container"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">MikeHarris</span>
+                    <span class="text-2xl font-light text-gray-700">Designs</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Home</a>
+                        <a href="#services" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Services</a>
+                        <a href="#portfolio" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">Portfolio</a>
+                        <a href="#about" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium">About</a>
+                        <a href="#contact" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition duration-300">Get Started</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-28 hero-bg min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                    We Design <span class="text-indigo-400">Experiences</span> That Matter
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="100">
+                    Transforming ideas into visually stunning realities. Our designs don't just look good - they work hard for your business.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-medium transition duration-300 text-center">
+                        Start Your Project
+                    </a>
+                    <a href="#portfolio" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-medium transition duration-300 text-center border border-white/20">
+                        View Our Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Our Design Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Comprehensive design solutions tailored to your unique needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 service-card transition duration-500" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="layout" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Intuitive interfaces that delight users and drive engagement. We create digital experiences that convert.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium inline-flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 service-card transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="pen-tool" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Brand Identity</h3>
+                    <p class="text-gray-600 mb-4">
+                        Distinctive branding that tells your story and builds recognition. We craft identities that stand out.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium inline-flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 service-card transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="monitor" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Web Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Beautiful, responsive websites that perform. We build digital homes for your brand that work on any device.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium inline-flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 service-card transition duration-500" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="box" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Packaging Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Packaging that sells your product before it's even opened. We create shelf appeal that drives purchases.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium inline-flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 service-card transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="smartphone" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">App Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Mobile experiences that users love. We design apps that are intuitive, engaging, and drive retention.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium inline-flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 service-card transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="bar-chart-2" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Marketing Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Visual assets that amplify your message. We create designs that stop the scroll and start the conversation.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium inline-flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Our Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    A selection of our recent design projects
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up">
+                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-1">Tech Startup Branding</h3>
+                            <p class="text-gray-300">Visual identity for innovative AI company</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/food/640x360/2" alt="Project 2" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-1">Organic Food Packaging</h3>
+                            <p class="text-gray-300">Sustainable packaging design for health brand</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/finance/640x360/3" alt="Project 3" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-1">Banking App UI/UX</h3>
+                            <p class="text-gray-300">Mobile banking experience redesign</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300">
+                    View All Projects
+                    <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="lg:col-span-5 mb-12 lg:mb-0" data-aos="fade-right">
+                    <img src="file:///C:/Users/HP/Documents/IMG-20250510-WA0311-3.jpg" alt="Mike Harris" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="lg:col-span-7 lg:pl-12 flex items-center" data-aos="fade-left">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About MikeHarris Designs</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Founded in 2015, MikeHarris Designs is a full-service creative agency specializing in strategic design solutions that drive business growth. We believe in the power of thoughtful design to solve problems, tell stories, and create meaningful connections.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Our team of passionate designers, strategists, and creatives work collaboratively to deliver exceptional results for clients across industries. We don't just make things look pretty - we create designs that work.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                                    <i data-feather="award" class="text-indigo-600 w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">50+ Awards</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                                    <i data-feather="smile" class="text-indigo-600 w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">200+ Happy Clients</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                                    <i data-feather="briefcase" class="text-indigo-600 w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium">8 Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Don't just take our word for it
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/5" alt="Sarah Johnson" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-indigo-600">CEO, TechStart</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Working with MikeHarris Designs transformed our brand. Their strategic approach to our visual identity helped us stand out in a crowded market and increased our customer engagement by 40%."
+                    </p>
+                    <div class="mt-4 flex">
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/6" alt="Michael Chen" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Michael Chen</h4>
+                            <p class="text-indigo-600">Marketing Director, GreenLife</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "The packaging design they created for our organic product line was stunning. It not only looked beautiful but communicated our brand values perfectly, resulting in a 25% increase in shelf sales."
+                    </p>
+                    <div class="mt-4 flex">
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/7" alt="Emma Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Emma Rodriguez</h4>
+                            <p class="text-indigo-600">Founder, UrbanBrew</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "From our logo to our website to our marketing materials, MikeHarris Designs has been instrumental in building our brand identity. Their work perfectly captures our urban, artisanal vibe."
+                    </p>
+                    <div class="mt-4 flex">
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Elevate Your Brand?</h2>
+                <p class="text-xl max-w-2xl mx-auto mb-10 opacity-90" data-aos="fade-up" data-aos-delay="100">
+                    Let's create something amazing together. Get in touch to discuss your project.
+                </p>
+                <div class="max-w-md mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-6 py-3 rounded-full bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-white/70">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email Address" class="w-full px-6 py-3 rounded-full bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-white/70">
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Tell us about your project" class="w-full px-6 py-3 rounded-2xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-white/70"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-indigo-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-400">MikeHarris</span>
+                        <span class="text-2xl font-light text-white">Designs</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Creating meaningful design solutions that drive business success and create memorable brand experiences.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="dribbble" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brand Identity</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Web Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Packaging Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">App Design</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span>Awka, Anambra State Nigeria</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="w-5 h-5 mr-2"></i>
+                            <span>mikeharrisdesign.ng</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="w-5 h-5 mr-2"></i>
+                            <span>+234 9131915583</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © 2025 MikeHarris Designs. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Initialize Vanta.js
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x5e6eff,
+            backgroundColor: 0x0,
+            size: 0.8
+        });
+        
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            // You would implement mobile menu functionality here
+            console.log('Mobile menu clicked');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
